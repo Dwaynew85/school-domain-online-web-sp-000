@@ -10,7 +10,7 @@ class School
     @name = name
     @grade = grade
     @roster[@names] = []
-    @roster[@name] << "@grade"
+    @roster[@name] << @grade
   end
 
 end
