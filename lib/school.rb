@@ -9,7 +9,9 @@ class School
   def add_student(name, grade)
     @name = name
     @grade = grade
-    @roster[@grade] = []
+    if @roster[grade].uniq
+      @roster[@grade] = []
+    end     
     @roster[@grade] << @name
   end
 
