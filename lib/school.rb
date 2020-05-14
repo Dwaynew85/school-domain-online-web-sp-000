@@ -7,9 +7,9 @@ class School
   end
 
   def add_student(name, grade)
-    @name = name 
-    @grade = grade 
+    @name = name
+    @grade = grade
     @roaster = {name.to_s, [grade]}
-  end 
+  end
 
 end
