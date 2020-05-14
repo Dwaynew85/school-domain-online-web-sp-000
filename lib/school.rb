@@ -11,7 +11,7 @@ class School
     @grade = grade
     if @roster[grade].uniq
       @roster[@grade] = []
-    end     
+    end
     @roster[@grade] << @name
   end
 
