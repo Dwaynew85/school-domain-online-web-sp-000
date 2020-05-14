@@ -1,3 +1,4 @@
+require 'pry'
 class School
   attr_accessor :name, :roster, :grade
 
@@ -9,6 +10,7 @@ class School
   def add_student(name, grade)
     @name = name
     @grade = grade
+    binding.pry
     unless @roster[@grade].include?(@grade)
       @roster[@grade] = []
     end
